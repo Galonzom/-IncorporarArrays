@@ -19,11 +19,23 @@ function capturar() {
     numeroidentCapturar,
     emailCapturar
   );//crea el objeto
-  console.log(sujetoNuevo);
+  //console.log(sujetoNuevo);
   agregar();
 }
 let baseClientes = [];
 function agregar() {
   baseClientes.push(sujetoNuevo);//agrega el objeto al Array
-  console.log(baseClientes);
-}
+  //console.log(baseClientes);
+  document.getElementById("tabla").innerHTML +=
+    "<tbody><td>" +
+    sujetoNuevo.nombre +
+    "</td><td>" +
+    sujetoNuevo.direccion +
+    "</td><td>" +
+    sujetoNuevo.telefono +
+    "</td><td>" +
+    sujetoNuevo.numeroident +
+    "</td><td>" +
+    sujetoNuevo.email +
+    "</td></tbody>";
+};
