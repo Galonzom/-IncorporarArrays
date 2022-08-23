@@ -1,4 +1,6 @@
-function capturar() {
+// reemplaza metodo metodo onclick por un evento
+let boton = document.getElementById('botonSub');
+ boton.onclick = () => {
   function Persona(nombre, direccion, telefono, numeroident, email) {
     this.nombre = nombre;
     this.direccion = direccion;
@@ -22,6 +24,8 @@ function capturar() {
   //console.log(sujetoNuevo);
   agregar();
 }
+
+
 let baseClientes = [];
 function agregar() {
   baseClientes.push(sujetoNuevo);//agrega el objeto al Array
